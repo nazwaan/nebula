@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "ES2022",
+    "target": "ES2022",
+    "lib": [
+      "DOM",
+      "ES2022",
+      "ESNext.AsyncIterable"
+    ],
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
