@@ -2,7 +2,7 @@ version: "3.6"
 services:
   web:
     container_name: ${COMPOSE_PROJECT_NAME}
-    image: devopsmv/node:16
+    build: .
     user: user
     stdin_open: true
     labels:
@@ -22,7 +22,7 @@ services:
       - db
   db:
     container_name: ${COMPOSE_PROJECT_NAME}-db
-    image: postgres:14
+    image: postgres:16
     ports:
       - "${DB_PORT}:5432"
     volumes:
